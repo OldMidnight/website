@@ -1,8 +1,8 @@
 <template>
-  <v-row class="elevation-1">
+  <v-row v-if="events.length > 0" class="elevation-1 mx-1">
     <v-col v-for="(event, index) in events" cols="12" :key="index" class="p-2">
       <v-row align="center">
-        <v-col cols="1">
+        <v-col cols="2">
           <v-avatar size="30" color="error">
             <v-icon>{{ eventIcon(event.type) }}</v-icon>
           </v-avatar>

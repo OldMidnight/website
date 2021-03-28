@@ -9,6 +9,11 @@ Vue.use(VueRouter)
     name: 'Home',
     component: () => import('@/views/Home')
   },
+  {
+    path: '/dcu/s3_demo',
+    name: 'S3_Demo',
+    component: () => import('@/views/DCU/s3_demo')
+  },
 ]
 
 const router = new VueRouter({

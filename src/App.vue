@@ -2,12 +2,16 @@
   <v-app>
     <v-main>
       <router-view />
+      <snackbar />
     </v-main>
   </v-app>
 </template>
 
 <script>
+import Snackbar from '@/components/helpers/Snackbar'
 export default {
-  name: 'App'
+  name: 'App',
+  components: { Snackbar }
 };
+
 </script>

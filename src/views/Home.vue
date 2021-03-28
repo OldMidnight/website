@@ -1,5 +1,5 @@
 <template>
-  <v-container class="home-container">
+  <v-container :class="{ 'home-container': !isMobile }">
     <v-row class="py-3">
       <v-col :cols="isMobile ? '12' : '6'">
         <v-card>
@@ -67,12 +67,6 @@ export default {
 </script>
 
 <style lang="scss">
-// .git-events {
-//   background-color: white;
-//   border-radius: 20px;
-//   height: 28em;
-// }
-
 .home-container {
   padding: 0 20%;
 }
